@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>This is the Dashboard</h1>
+    {% if user.is_authenticated %}
+        <b>{{user.username}}</b>
+        <span>WILLING TO?</span>
+        <a href="{% url 'logout' %}"> LOGOUT</a>
+        {% else %}
+        <a href="{% url 'login_url' %}">LOGIN</a>
+        <a href="{% url 'register_url' %}">Register</a>
+    {% endif %}
+{% endblock %}
