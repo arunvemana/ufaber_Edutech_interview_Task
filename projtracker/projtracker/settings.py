@@ -25,7 +25,7 @@ SECRET_KEY = 'enhs%k%c^oc+rh+%(c1aw-7=_qr+_jklc1m7trb8882x-44sm='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['4c5ab8b080ae.ngrok.io','127.0.0.1:8000']
 
 
 # Application definition
@@ -120,4 +120,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-LOGIN_REDIRECT_URL = '/accounts/dashboard/'
+LOGIN_REDIRECT_URL = '/dashboard/'
